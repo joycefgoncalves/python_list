@@ -1,0 +1,36 @@
+#task 1 
+
+students = ["John", "Doe", "Jane", "Smith"]
+grades = [85, 90, 78, 88]
+activities = ["Football", "Music", "Art", "Dance"]
+
+# Filter out students with grades below 80 and print their details
+for student, grade, activity in zip(students, grades, activities):
+    if grade < 80:
+        print(f"{student}, {grade}, {activity}")
+
+
+
+#task 2
+
+students = ["John", "Doe", "Jane", "Smith"]
+grades = [85, 90, 78, 88]
+activities = ["Football", "Music", "Art", "Dance"]
+
+students_approved = []
+
+# Filter out students with grades below 80 and add their names to students_approved
+for student, grade in zip(students, grades):
+    if grade >= 80:
+        students_approved.append(student)
+
+# Display the students_approved list
+print("students_approved =", students_approved)
+
+
+
+#task 3
+
+students_approved = ['John', 'Doe', 'Smith']
+print("students_approved =", students_approved)
+

@@ -1,0 +1,52 @@
+#task 1 
+
+submitted = ["Alice", "Bob", "Charlie", "David"]
+attended = ["Charlie", "Eve", "Alice", "Frank"]
+
+# Convert lists to sets
+submitted_set = set(submitted)
+attended_set = set(attended)
+
+# Find the intersection of the two sets
+common_students = submitted_set.intersection(attended_set)
+
+# Convert the result back to a list
+common_students_list = list(common_students)
+
+# Display the common students
+print("Students who both submitted assignments and attended class:", common_students_list)
+
+
+
+
+#task 2 
+
+submitted = ["Alice", "Bob", "Charlie", "David"]
+attended = ["Charlie", "Eve", "Alice", "Frank"]
+
+# Convert lists to sets
+submitted_set = set(submitted)
+attended_set = set(attended)
+
+# Check if the sets are equal
+if submitted_set == attended_set:
+    print("The two lists are identical in terms of their content.")
+else:
+    print("The two lists are not identical in terms of their content.")
+
+
+#task 3
+
+submitted = ["Alice", "Bob", "Charlie", "David"]
+attended = ["Charlie", "Eve", "Alice", "Frank"]
+
+# Remove students from attended list who did not submit their assignment
+for student in attended[:]:  # Iterate over a copy of the list to avoid modifying it while iterating
+    if student not in submitted:
+        attended.remove(student)
+
+# Display the updated attended list
+print("Updated attended list:", attended)
+
+
+

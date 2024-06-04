@@ -1,0 +1,42 @@
+#task 1
+grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
+
+# Sort grades in descending order
+grades.sort(reverse=True)
+
+# Display the sorted list
+print("Sorted grades in descending order:", grades)
+
+
+
+
+
+#task 2
+grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
+
+# Calculate the sum of all grades
+total_grades = sum(grades)
+
+# Calculate the average grade
+average_grade = total_grades / len(grades)
+
+# Display the average grade
+print("Average grade:", average_grade)
+
+
+
+
+
+#task 3
+
+grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
+
+# Replace grades below 80 with "Failed"
+for i in range(len(grades)):
+    if grades[i] < 80:
+        grades[i] = "Failed"
+
+# Display the updated grades
+print("Updated grades:", grades)
+
+
